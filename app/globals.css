@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-sans: 'Rubik', sans-serif;
+  --font-mono: monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* custom css */
+
+footer h3.text-base {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p,
+footer p,
+footer span,
+footer a,
+footer a span {
+  font-size: 16px;
+  color: #212529;
+  font-family: 'Atlassian Sans';
+}
+
+footer a:hover {
+  color: #FB5D14;
+}
+
+footer a.group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+footer a.group:hover {
+  background-color: #FB5D14;
+  color: #FB5D14;
+}
+
+footer a.group:hover svg {
+  fill: #fff;
+}
+
+.overlay-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/blur-black-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.side-bar {
+  position: sticky;
+  top: 85px;
+  left: 0px;
+  height: 100vh;
+  /* width: 230px; */
+  z-index: 10;
+  transition: 0.8s;
+  border-right: 2px solid rgb(242, 98, 38);
+  padding: 60px 40px 40px;
+  overflow: auto;
+}
+
+h4.text-lg {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Atlassian Sans';
+  color: #212529;
+}
+
+aside ul li a span {
+  font-weight: 600;
+  font-family: 'Geist', sans-serif;
+  color: #212529;
+  transition: color 0.3s ease;
+}
+
+aside ul li a:hover span {
+  color: #F26226;
+}
