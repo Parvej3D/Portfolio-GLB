@@ -39,14 +39,14 @@ export default function ShoesPage() {
                 key={index}
                 className="bg-white shadow flex flex-col items-center"
               >
-                <model-viewer
+{/*                 <model-viewer
                   src={src}
                   alt={`3D Shoe Model ${index + 1}`}
                   auto-rotate
                   camera-controls
                   ar
                   style={{ width: '100%', height: '400px', backgroundColor: '#fff' }}
-                ></model-viewer>
+                ></model-viewer> */}
                 <div className="w-full mt-2 p-4 text-center flex justify-between items-center rounded-none" style={{ borderTop: '1px solid rgb(237, 237, 237)' }}>
                   <p className="font-semibold">Shoe Model {index + 1}</p>
                   <p className="text-sm text-gray-500">05-26-2025</p>
