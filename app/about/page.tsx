@@ -31,15 +31,15 @@ const About = () => {
     <div style={{ padding: '20px', backgroundColor: '#fff' }}>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
         {modelPaths.slice(0, visibleCount).map((src, index) => (
-          <model-viewer
-            key={index}
-            src={src}
-            alt={`3D model ${index + 1}`}
-            auto-rotate
-            camera-controls
-            ar
-            style={{ width: '100%', height: '400px', backgroundColor: '#f0f0f0' }}
-          ></model-viewer>
+          // <model-viewer
+          //   key={index}
+          //   src={src}
+          //   alt={`3D model ${index + 1}`}
+          //   auto-rotate
+          //   camera-controls
+          //   ar
+          //   style={{ width: '100%', height: '400px', backgroundColor: '#f0f0f0' }}
+          // ></model-viewer>
         ))}
       </div>
 
