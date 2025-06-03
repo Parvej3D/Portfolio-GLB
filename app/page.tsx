@@ -63,14 +63,14 @@ export default function ShoesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {models.slice(0, visibleCount).map((model, index) => (
               <div key={index} className="bg-white shadow flex flex-col items-center">
-                <model-viewer
+{/*                 <model-viewer
                   src={model.src}
                   alt={model.name}
                   auto-rotate
                   camera-controls
                   ar
                   style={{ width: '100%', height: '400px', backgroundColor: '#fff' }}
-                ></model-viewer>
+                ></model-viewer> */}
                 <div
                   className="w-full mt-2 p-4 text-center flex justify-between items-center rounded-none"
                   style={{ borderTop: '1px solid rgb(237, 237, 237)' }}
