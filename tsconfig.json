@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "model-viewer.d.ts"
+    "app/model-viewer.d.ts"
   ],
   "exclude": ["node_modules"]
 }
