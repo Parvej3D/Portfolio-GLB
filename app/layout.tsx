@@ -210,6 +210,8 @@ export default function RootLayout({
           <a href="https://vertical3dtech.com/" className="hover:text-[#F26226] ml-1">Vertical 3D Tech</a> | All Rights Reserved
         </p>
       </div>
+
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     </body>
     </html >
   );
