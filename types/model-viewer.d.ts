@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-declare namespace JSX {
-  interface IntrinsicElements {
-    'model-viewer': any;
-  }
-}
-
-
-
-
-=======
 // types/model-viewer.d.ts
 import React from 'react';
 
@@ -33,4 +22,4 @@ declare global {
     }
   }
 }
->>>>>>> d9a31ad2066a292fdc76e41de32010f7cb7ea351
+
