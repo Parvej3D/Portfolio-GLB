@@ -204,27 +204,17 @@ export default function RootLayout({
           </div>
         </footer>
         {/* Copyright Section */}
-        <div className="text-center py-4 px-5 bg-[#f5f5f5]">
-          <p className="text-sm m-0">
-            © 2021 - {new Date().getFullYear()}
-            <a href="https://vertical3dtech.com/" className="hover:text-[#F26226] ml-1">Vertical 3D Tech</a> | All Rights Reserved
-          </p>
-        </div>
-<<<<<<< HEAD
-      </body>
-=======
-      </footer>
-      {/* Copyright Section */}
-      <div className="text-center py-4 px-5 bg-[#f5f5f5]">
-        <p className="text-sm m-0">
-          © 2021 - {new Date().getFullYear()}
-          <a href="https://vertical3dtech.com/" className="hover:text-[#F26226] ml-1">Vertical 3D Tech</a> | All Rights Reserved
-        </p>
-      </div>
-
+        <footer>
+          <div className="text-center py-4 px-5 bg-[#f5f5f5]">
+            <p className="text-sm m-0">
+              © 2021 - {new Date().getFullYear()}
+              <a href="https://vertical3dtech.com/" className="hover:text-[#F26226] ml-1">Vertical 3D Tech</a> | All Rights Reserved
+            </p>
+          </div>
+        </footer>
+        {/* Copyright Section */}
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    </body>
->>>>>>> d9a31ad2066a292fdc76e41de32010f7cb7ea351
+      </body>
     </html >
   );
 }
