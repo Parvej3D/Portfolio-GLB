@@ -33,12 +33,20 @@
     }
   },
   "include": [
+<<<<<<< HEAD
     "**/*.ts",
     "**/*.tsx",
     "next-env.d.ts",
     "build/types/**/*.ts",
     "global.d.ts"
     // "types/**/*.d.ts",
+=======
+   "**/*.ts",
+    "**/*.tsx",
+    "next-env.d.ts",
+    "build/types/**/*.ts",
+    "types/model-viewer.d.ts"
+>>>>>>> d9a31ad2066a292fdc76e41de32010f7cb7ea351
   ],
   "exclude": [
     "node_modules"

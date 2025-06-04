@@ -96,4 +96,9 @@ export default function ShoesPage() {
       </div>
     </main>
   );
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> d9a31ad2066a292fdc76e41de32010f7cb7ea351
