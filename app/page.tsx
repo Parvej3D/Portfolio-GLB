@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import MyModelViewer from './components/MyModelViewer';
 
 export default function ShoesPage() {
   useEffect(() => {
@@ -63,14 +64,13 @@ export default function ShoesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {models.slice(0, visibleCount).map((model, index) => (
               <div key={index} className="bg-white shadow flex flex-col items-center">
-                <model-viewer
+                <MyModelViewer
                   src={model.src}
                   alt={model.name}
                   auto-rotate
                   camera-controls
-                  ar
                   style={{ width: '100%', height: '400px', backgroundColor: '#fff' }}
-                ></model-viewer>
+                />
                 <div
                   className="w-full mt-2 p-4 text-center flex justify-between items-center rounded-none"
                   style={{ borderTop: '1px solid rgb(237, 237, 237)' }}

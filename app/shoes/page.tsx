@@ -1,7 +1,12 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import Sidebar from '../components/Sidebar';
+// import Sidebar from '../components/Sidebar';
+
+import dynamic from 'next/dynamic';
+
+const Sidebar = dynamic(() => import('../components/Sidebar'), { ssr: false });
+import MyModelViewer from '../components/MyModelViewer';
 
 export default function ShoesPage() {
   useEffect(() => {
@@ -11,7 +16,7 @@ export default function ShoesPage() {
   const modelPaths = [
     '/models/sandal_glb.glb',
     '/models/nike_shoes_2.glb',
-    
+
   ];
 
   const [visibleCount, setVisibleCount] = useState(2);
@@ -39,14 +44,13 @@ export default function ShoesPage() {
                 key={index}
                 className="bg-white shadow flex flex-col items-center"
               >
-                <model-viewer
+                <MyModelViewer
                   src={src}
                   alt={`3D Shoe Model ${index + 1}`}
                   auto-rotate
                   camera-controls
-                  ar
                   style={{ width: '100%', height: '400px', backgroundColor: '#fff' }}
-                ></model-viewer>
+                />
                 <div className="w-full mt-2 p-4 text-center flex justify-between items-center rounded-none" style={{ borderTop: '1px solid rgb(237, 237, 237)' }}>
                   <p className="font-semibold">Shoe Model {index + 1}</p>
                   <p className="text-sm text-gray-500">05-26-2025</p>

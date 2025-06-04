@@ -41,7 +41,7 @@ footer a,
 footer a span {
   font-size: 16px;
   color: #212529;
-  font-family: 'Atlassian Sans';
+  font-family: 'Geist', sans-serif;
 }
 
 footer a:hover {
@@ -97,7 +97,7 @@ footer a.group:hover svg {
 h4.text-lg {
   font-size: 20px;
   font-weight: 700;
-  font-family: 'Atlassian Sans';
+  font-family: 'Geist', sans-serif;
   color: #212529;
 }
 

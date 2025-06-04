@@ -12,8 +12,12 @@ module.exports = {
       },
     },
   },
+
+  distDir: 'build',
+
 };
 
 
 
 export default nextConfig;
+

@@ -157,7 +157,7 @@ export default function RootLayout({
               <h3 className="text-base mb-5">Follow us</h3>
               <ul className="flex gap-4">
                 <li>
-                  <a href="https://www.facebook.com/vertical3dtech"  className="group flex items-center justify-center w-8 h-8 rounded-full bg-transparent hover:bg-[#F26226] transition-colors" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.facebook.com/vertical3dtech" className="group flex items-center justify-center w-8 h-8 rounded-full bg-transparent hover:bg-[#F26226] transition-colors" target="_blank" rel="noopener noreferrer">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-5 h-5 text-gray-600 group-hover:text-white transition-colors" fill="#F26226"
@@ -179,38 +179,38 @@ export default function RootLayout({
 
                 <li>
                   <a href="https://www.linkedin.com/company/vertical3dtech/" className="group hover:text-[#F26226] transition-colors" target="_blank" rel="noopener noreferrer">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5 text-gray-600 group-hover:text-[#F26226] transition-colors" fill="#F26226"
-                    viewBox="0 0 448 512"
-                  >
-                    <path d="M100.3 448H7.4V148.9h92.9V448zM53.9 108.1C24.2 108.1 0 83.8 0 54.2S24.2 0 53.9 0s53.9 24.2 53.9 54.2-24.2 53.9-53.9 53.9zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.6V448h-92.7V148.9h89V184h1.3c12.4-23.6 42.5-48.3 87.5-48.3 93.6 0 110.8 61.6 110.8 141.7V448z" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/@vertical3DTech" className="group hover:text-[#F26226] transition-colors" target="_blank" rel="noopener noreferrer">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5 text-gray-600 group-hover:text-[#F26226] transition-colors" fill="#F26226"
-                    viewBox="0 0 576 512"
-                  >
-                    <path d="M549.7 124.1c-6.3-24-24.9-42.6-48.8-48.9C458.7 64 288 64 288 64S117.3 64 75.1 75.2C51.2 81.5 32.6 100.1 26.3 124.1 16 167.5 16 256 16 256s0 88.5 10.3 131.9c6.3 24 24.9 42.6 48.8 48.9C117.3 448 288 448 288 448s170.7 0 212.9-11.2c23.9-6.3 42.5-24.9 48.8-48.9C560 344.5 560 256 560 256s0-88.5-10.3-131.9zM232 336V176l142 80-142 80z" />
-                  </svg>
-                </a>
-              </li>
-            </ul>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-5 h-5 text-gray-600 group-hover:text-[#F26226] transition-colors" fill="#F26226"
+                      viewBox="0 0 448 512"
+                    >
+                      <path d="M100.3 448H7.4V148.9h92.9V448zM53.9 108.1C24.2 108.1 0 83.8 0 54.2S24.2 0 53.9 0s53.9 24.2 53.9 54.2-24.2 53.9-53.9 53.9zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.6V448h-92.7V148.9h89V184h1.3c12.4-23.6 42.5-48.3 87.5-48.3 93.6 0 110.8 61.6 110.8 141.7V448z" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/@vertical3DTech" className="group hover:text-[#F26226] transition-colors" target="_blank" rel="noopener noreferrer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-5 h-5 text-gray-600 group-hover:text-[#F26226] transition-colors" fill="#F26226"
+                      viewBox="0 0 576 512"
+                    >
+                      <path d="M549.7 124.1c-6.3-24-24.9-42.6-48.8-48.9C458.7 64 288 64 288 64S117.3 64 75.1 75.2C51.2 81.5 32.6 100.1 26.3 124.1 16 167.5 16 256 16 256s0 88.5 10.3 131.9c6.3 24 24.9 42.6 48.8 48.9C117.3 448 288 448 288 448s170.7 0 212.9-11.2c23.9-6.3 42.5-24.9 48.8-48.9C560 344.5 560 256 560 256s0-88.5-10.3-131.9zM232 336V176l142 80-142 80z" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
+        </footer>
+        {/* Copyright Section */}
+        <div className="text-center py-4 px-5 bg-[#f5f5f5]">
+          <p className="text-sm m-0">
+            © 2021 - {new Date().getFullYear()}
+            <a href="https://vertical3dtech.com/" className="hover:text-[#F26226] ml-1">Vertical 3D Tech</a> | All Rights Reserved
+          </p>
         </div>
-      </footer>
-      {/* Copyright Section */}
-      <div className="text-center py-4 px-5 bg-[#f5f5f5]">
-        <p className="text-sm m-0">
-          © 2021 - {new Date().getFullYear()}
-          <a href="https://vertical3dtech.com/" className="hover:text-[#F26226] ml-1">Vertical 3D Tech</a> | All Rights Reserved
-        </p>
-      </div>
-    </body>
+      </body>
     </html >
   );
 }
