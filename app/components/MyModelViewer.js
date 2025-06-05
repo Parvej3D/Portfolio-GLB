@@ -1,29 +1,19 @@
-   import React, { useRef, useEffect } from 'react';
-   import '@google/model-viewer';
+import React, { useRef, useEffect } from 'react';
 
-   const MyModelViewer = ({ src, alt, ...props }) => {
-     const modelViewerRef = useRef(null);
+const MyModelViewer = ({ src, alt, ...props }) => {
+  const modelViewerRef = useRef(null);
+  
+  return (
+    <model-viewer
+      ref={modelViewerRef}
+      src={src}
+      alt={alt}
+      ar
+      auto-rotate
+      camera-controls
+      {...props}
+    />
+  );
+};
 
-     useEffect(() => {
-       const modelViewer = modelViewerRef.current;
-
-       if (modelViewer) {
-           modelViewer.addEventListener('load', () => {
-           // Optional: Perform actions after the model loads
-             console.log('Model loaded successfully');
-           });
-       }
-     }, []);
-
-     return (
-       <model-viewer
-         ref={modelViewerRef}
-         src={src}
-         alt={alt}
-         {...props}
-       >
-       </model-viewer>
-     );
-   };
-
-   export default MyModelViewer;
+export default MyModelViewer;
