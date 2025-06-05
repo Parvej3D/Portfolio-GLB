@@ -5,25 +5,3 @@ const nextConfig = {
 };
 
 export default nextConfig;
-
-
-// import type { NextConfig } from "next";
-
-// const nextConfig: NextConfig = {
-// };
-
-// module.exports = {
-//   theme: {
-//     extend: {
-//       fontFamily: {
-//         sans: ['Rubik', 'sans-serif'],
-//       },
-//     },
-//   },
-
-//   distDir: 'build',
-
-// };
-
-// export default nextConfig;
-
