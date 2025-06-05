@@ -15,9 +15,14 @@ export default function ShoesPage() {
       date: '2025-05-20',
     },
     {
-      src: '/models/nike_shoes_2.glb',
+      src: '/models/nikeshoes.glb',
       name: 'Shoes Demo 2',
       date: '2025-05-21',
+    },
+    {
+      src: '/models/femletes_shoes.glb',
+      name: 'Shoes Demo 3',
+      date: '2025-05-22',
     },
   ];
 

@@ -46,7 +46,12 @@ export default function ShoesPage() {
                   auto-rotate
                   camera-controls
                   ar
-                  shadow-intensity="1"
+                  shadow-intensity="0.3"
+                  shadow-softness="0.7"
+                  exposure="1.1"
+                  tone-mapping="aces"
+                  autoplay
+                  animation-name="*"
                   style={{ width: '100%', height: '70vh', backgroundColor: '#fff', borderRadius: '8px' }}
                 />
                 <div className="w-full mt-2 p-4 text-center flex justify-between items-center rounded-none" style={{ borderTop: '1px solid rgb(237, 237, 237)' }}>

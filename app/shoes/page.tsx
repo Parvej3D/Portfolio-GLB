@@ -15,7 +15,7 @@ export default function ShoesPage() {
 
   const modelPaths = [
     '/models/sandal_glb.glb',
-    '/models/nike_shoes_2.glb',
+    '/models/nikeshoes.glb',
 
   ];
 
