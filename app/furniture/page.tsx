@@ -38,7 +38,7 @@ export default function ShoesPage() {
             {modelPaths.slice(0, visibleCount).map((src, index) => (
               <div
                 key={index}
-                className="bg-white shadow flex flex-col items-center"
+                className="bg-white flex flex-col items-center rounded-md border border-[#ededed]" style={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
               >
                 <MyModelViewer
                   src={src}
@@ -46,7 +46,8 @@ export default function ShoesPage() {
                   auto-rotate
                   camera-controls
                   ar
-                  style={{ width: '100%', height: '400px', backgroundColor: '#fff' }}
+                  shadow-intensity="1"
+                  style={{ width: '100%', height: '70vh', backgroundColor: '#fff', borderRadius: '8px' }}
                 />
                 <div className="w-full mt-2 p-4 text-center flex justify-between items-center rounded-none" style={{ borderTop: '1px solid rgb(237, 237, 237)' }}>
                   <p className="font-semibold">Furniture Demo {index + 1}</p>
