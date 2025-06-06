@@ -11,9 +11,12 @@ export default function ShoesPage() {
 
   const modelPaths = [
     '/models/cordelia-bronze-oversized-sunglasses.glb',
-    '/models/milky_tort.glb',
+    '/models/black.glb',
     '/models/Orange_Goggle_2k.glb',
-
+    '/models/clear_lenses_red_border_2k.glb',
+    '/models/milky_tort.glb',
+    '/models/brown tort.glb',
+    '/models/sunglasses (2).glb',
   ];
 
   const [visibleCount, setVisibleCount] = useState(2);

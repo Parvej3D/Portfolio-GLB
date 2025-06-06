@@ -11,7 +11,7 @@ export default function ShoesPage() {
 
   const modelPaths = [
     '/models/rolex_watch_animation_v02.glb',
-    '/models/richard-milles.glb',
+    // '/models/richard-milles.glb',
 
   ];
 

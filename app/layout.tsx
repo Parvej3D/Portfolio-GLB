@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
+import Header from "./components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,88 +27,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#f5f5f5]`}>
-        <header className="sticky top-0 z-50 bg-white shadow-md">
-          <div className="w-full">
-            <div className="container mx-auto px-5">
-              <div className="flex flex-wrap items-center justify-between py-4">
-                {/* Logo */}
-                <div className="w-full lg:w-1/4">
-                  <a href="/" className="block">
-                    <Image
-                      className="h-12 w-auto"
-                      src="/Logo-img.png"
-                      alt="Company Logo"
-                      width={500}
-                      height={53}
-                      priority
-                    />
-                  </a>
-                </div>
-
-                {/* Desktop Menu */}
-                <div className="w-full lg:w-3/4 hidden lg:block">
-                  <nav className="flex items-center justify-end space-x-6">
-                    <div className="flex items-center space-x-4 ml-6">
-                      <a href="tel:+7307005770" className="p-2 rounded-full text-white border-1 border-transparent hover:border-[#F26226] transition duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" viewBox="0 0 24 24" fill="#F26226">
-                          <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.004 1.004 0 011.11-.21c1.21.49 2.53.76 3.89.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.29 21.53 2.47 13.71 2.47 4a1 1 0 011-1H7a1 1 0 011 1c0 1.36.26 2.68.76 3.89a1.003 1.003 0 01-.21 1.11l-2.2 2.2z" />
-                        </svg>
-                      </a>
-
-                      <a href="mailto:theverticaltech3@gmail.com" className="p-2 rounded-full text-white border-1 border-transparent hover:border-[#F26226] transition duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" viewBox="0 0 24 24" fill="#F26226">
-                          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8l8 5 8-5v10H4z" />
-                        </svg>
-                      </a>
-                    </div>
-                  </nav>
-                </div>
-
-                {/* Mobile Menu Trigger */}
-                <div className="lg:hidden flex justify-between w-full items-center">
-                  <a href="/">
-                    <Image src="/images/Logo-img.png" alt="Company Logo" width={160} height={40} />
-                  </a>
-                  <div className="hamburger-menu cursor-pointer" id="hamburger-1">
-                    <div className="space-y-1">
-                      <div className="w-6 h-0.5 bg-black" />
-                      <div className="w-6 h-0.5 bg-black" />
-                      <div className="w-6 h-0.5 bg-black" />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Mobile Menu */}
-                <div className="w-full mt-4 lg:hidden hidden" id="mobile-menu">
-                  <ul className="space-y-2 text-sm font-medium">
-                    <li className="group">
-                      <a href="#" className="flex items-center justify-between">Services <i className="arrow up"></i></a>
-                      <ul className="ml-4 mt-1 hidden group-hover:block">
-                        <li><a href="/ar_modelings.html">AR 3D Modeling</a></li>
-                        <li><a href="/3d-configurator.html">3D Configurator</a></li>
-                        <li><a href="/rendering.html">Rendering</a></li>
-                        <li><a href="https://vertical3dtech.com/portfolio/">VFX / Animation</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="/customer-showcase.html">Customer Showcase</a></li>
-                    <li><a href="/portfolio.html">Portfolio</a></li>
-                    <li className="group">
-                      <a href="#" className="flex items-center justify-between">About Us <i className="arrow up"></i></a>
-                      <ul className="ml-4 mt-1 hidden group-hover:block">
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href="/blog.html">Blog</a></li>
-                        <li><a href="/contact.html">Contact Us</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </header>
-
+         <Header />
         {children}
-
         <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center bg-gray-100 text-sm border-t border-b" style={{ borderColor: '#F26226' }}>
           <div className="container mx-auto flex flex-wrap gap-12 justify-between px-5 py-[50px] bg-[#f5f5f5]">
             <div className="max-w-md">

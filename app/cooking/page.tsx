@@ -11,6 +11,7 @@ export default function ShoesPage() {
   }, []);
 
   const modelPaths = [
+    '/models/outdoor-kitchen.glb',
     '/models/schickling_grill.glb',
     '/models/icecream_maker.glb',
     '/models/Sipper.glb',
@@ -48,6 +49,8 @@ export default function ShoesPage() {
                   camera-controls
                   ar
                   shadow-intensity="1"
+                  autoplay
+                  animation-name="*"
                   style={{ width: '100%', height: '70vh', backgroundColor: '#fff', borderRadius: '8px' }}
                 />
                 <div className="w-full mt-2 p-4 text-center flex justify-between items-center rounded-none" style={{ borderTop: '1px solid rgb(237, 237, 237)' }}>

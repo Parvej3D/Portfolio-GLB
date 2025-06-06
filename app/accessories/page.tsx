@@ -11,7 +11,9 @@ export default function ShoesPage() {
 
   const modelPaths = [
     '/models/boxing_glove_red_closed.glb',
+    '/models/red socks.glb',
     '/models/Cap.glb',
+    '/models/hat glb.glb',
   ];
 
   const [visibleCount, setVisibleCount] = useState(2);

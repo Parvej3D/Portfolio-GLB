@@ -10,9 +10,11 @@ export default function ShoesPage() {
   }, []);
 
   const modelPaths = [
-    '/models/kids_jacket.glb',
+    '/models/fire.glb',
     '/models/orange_t_shirt.glb',
     '/models/puffer_jacket.glb',
+    '/models/kids_jacket.glb',
+    '/models/hoodie.glb',
   ];
 
   const [visibleCount, setVisibleCount] = useState(2);
@@ -51,7 +53,7 @@ export default function ShoesPage() {
                 />
                 <div className="w-full mt-2 p-4 text-center flex justify-between items-center rounded-none" style={{ borderTop: '1px solid rgb(237, 237, 237)' }}>
                   <p className="font-semibold">Clothing Demo {index + 1}</p>
-                  <p className="text-sm text-gray-500">05-26-2025</p>
+                  <p className="text-sm text-gray-500">06-26-2025</p>
                 </div>
               </div>
             ))}

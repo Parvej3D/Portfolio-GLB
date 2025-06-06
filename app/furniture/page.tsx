@@ -10,9 +10,14 @@ export default function ShoesPage() {
   }, []);
 
   const modelPaths = [
-    '/models/stargazer.glb',
+    '/models/lumara_sofa.glb',
     '/models/havana.glb',
-
+    '/models/brunie_love_seat_sofa.glb',
+    '/models/magnus.glb',
+    '/models/stargazer.glb',
+    '/models/desk.glb',
+    '/models/wall_mount.glb',
+    '/models/wall_mount_white.glb',
   ];
 
   const [visibleCount, setVisibleCount] = useState(2);

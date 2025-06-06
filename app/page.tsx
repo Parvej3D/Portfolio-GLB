@@ -24,6 +24,11 @@ export default function ShoesPage() {
       name: 'Shoes Demo 3',
       date: '2025-05-22',
     },
+    {
+      src: '/models/green shoe.glb',
+      name: 'Shoes Demo 4',
+      date: '2025-05-23',
+    },
   ];
 
   const [visibleCount, setVisibleCount] = useState(2);
