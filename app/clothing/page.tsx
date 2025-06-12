@@ -63,7 +63,7 @@ export default function ShoesPage() {
             <div className="flex justify-center mt-8">
               <button
                 onClick={handleLoadMore}
-                className="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition"
+                className="bg-black text-white px-6 py-3 rounded-full hover:bg-orange-600 transition cursor-pointer"
               >
                 Load More
               </button>
