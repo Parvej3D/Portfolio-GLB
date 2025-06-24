@@ -14,7 +14,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
   title: "High-Quality 3D Model Asset Creation | Portfolio – Vertical 3D Tech",
   description: "Explore our portfolio of custom-created, high-quality 3D models for e-commerce, AR/VR, and product visualization.",
@@ -22,11 +21,6 @@ export const metadata: Metadata = {
     canonical: 'https://portfolio-glb.vercel.app/',
   },
 };
-
-
-
-
-<link rel="canonical" href="https://vertical3dtech.com/your-page-slug" />
 
 export default function RootLayout({
   children,
