@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://portfolio-glb.vercel.app/
+
+# Sitemaps
+Sitemap: https://portfolio-glb.vercel.app/sitemap.xml
