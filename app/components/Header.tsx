@@ -17,7 +17,7 @@ export default function Header() {
         <header className="sticky top-0 z-50 bg-white shadow-md">
             <div className="container mx-auto px-5 py-4 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="block">
+                <Link href="https://vertical3dtech.com/" className="block">
                     <Image
                         src="/Logo-img.png"
                         alt="Vertical 3D Tech Logo"
